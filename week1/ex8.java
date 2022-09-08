@@ -1,23 +1,17 @@
 package week1;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class ex8 {
     public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input the first number : ");
-        int a = in.nextInt();
-        System.out.print("Input the second number: ");
-        int b = in.nextInt();
-        System.out.println("Result: "+result(a, b));
-    }
-    public static int result(int x, int y)
-    {
-        if(x == y)
-            return 0;
-        if(x % 6 == y % 6)
-            return (x < y) ? x : y;
-        return (x > y) ? x : y;
+        System.out.print("sinu nimi: ");
+        String name = reader.nextLine();
+
+        System.out.print("kui vana sa oled: ");
+        int age = Integer.parseInt(reader.nextLine());
+
+        System.out.println("sinu nimi on: " + name + ", ja sa oled " + age + " aastat vana.");
     }
 }
