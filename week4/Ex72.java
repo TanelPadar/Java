@@ -5,6 +5,9 @@ public class Ex72 {
 
         Account MattsAccount = new Account("Matt's account in Switzerland",1000.00);
         Account MysAccount = new Account("Matt's account in Switzerland",0);
+        Account A = new Account("A's account", 100.00);
+        Account B = new Account("B's account", 0.0);
+        Account C = new Account("C's account", 0.0);
 
 
         System.out.println("Initial state");
@@ -19,5 +22,16 @@ public class Ex72 {
         System.out.println("Final state");
         System.out.println(MattsAccount);
         System.out.println(MysAccount);
+
+        transfer(A,B,50);
+        transfer(B,C,25);
     }
+
+    public static void transfer(Account from, Account to, double amount){
+        from.withdrawal(amount);
+        to.deposit(amount);
+    }
+
+
+
 }
