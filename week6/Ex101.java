@@ -8,6 +8,7 @@ public class Ex101 {
         Library.addBook(new Book("The Stinky Cheese Man and Other Fairly Stupid Tales", "Penguin Group", 1992));
         Library.addBook(new Book("NHL Hockey", "Stanley Kupp", 1952));
         Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
+        Library.addBook(new Book("cheese", "kalle,",2022));
 
 
 
